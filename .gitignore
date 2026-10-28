@@ -1,0 +1,52 @@
+# Local environment and secrets
+.DS_Store
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Firmware build products; retain source and reviewed configuration
+.pio/
+managed_components/
+sdkconfig.old
+
+# Local IDE state
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Measurements are archived separately; ignoring NEVER authorizes deletion.
+/data/raw/*
+!/data/raw/README.md
+/data/interim/*
+!/data/interim/README.md
+/data/processed/*
+!/data/processed/README.md
+/experiments/runs/*
+!/experiments/runs/README.md
+
+# Generated paper products; keep reviewed figures and bibliography sources
+*.aux
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+/paper/**/*.log
+*.out
+*.toc
+
+# Do not broadly ignore EDA projects, PDF datasheets, CSV or JSON calibration.
+
+# Generated student/source distribution archives
+/releases/

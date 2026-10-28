@@ -247,6 +247,6 @@
 ## GitHub首次上传与SSH配置（2026-10-28）
 
 - [x] 用户授权上传至yolkytygyfse-a11y/pv-senselab；已核实本地main尚无提交、未配置remote，目标仓库公开且报告size=0。现有gh身份zhengyongxiong没有目标仓库写权限，旧SSH身份不等于目标账号，不改原有账号配置。
-- [x] 创建本机项目专用Ed25519密钥，私钥仅存~/.ssh、权限600；仅公钥副本位于被忽略的releases/pv-senselab-github-ssh.pub，公私钥均不进入项目提交。待将公钥添加到目标账号。
+- [x] 创建本机项目专用Ed25519密钥，私钥仅存~/.ssh、权限600；仅公钥副本位于被忽略的releases/pv-senselab-github-ssh.pub，公私钥均不进入项目提交。用户已将公钥添加至目标账号，SSH返回Hi yolkytygyfse-a11y；项目单独指定密钥，未修改全局Git/SSH账号配置。
 - [x] 首次上传候选清单已检查：73个项目源码/规格/说明文件，无实验原始记录、私钥、已识别令牌、构建缓存或分发ZIP；Python两项、Node双语/缓存/CSV、C++协议/数学与统计/缓存测试重新运行通过。
-- [ ] GitHub目标账号绑定公钥，SSH身份验证与仓库写权限验证，推送main并核对远端提交；未完成前不宣称已上传。
+- [x] GitHub目标账号公钥绑定与SSH身份验证通过，普通push -u origin main成功（无force）。已核对首个提交7e4a440f00eb5038606de1ab21709b3ca0c10625与远端main一致；工作区干净、main跟踪origin/main。仓库：https://github.com/yolkytygyfse-a11y/pv-senselab。
